@@ -1,6 +1,6 @@
 ; UA
 ; Open support ticket on selected text.
-+§::
++Â§::
 	IfWinExist, Unikum datasystem ab
 	{
 		; Save clipboard content for later use.
@@ -33,7 +33,7 @@ Return
 
 ; UA
 ; Open bug ticket on selected text.
-§::
+Â§::
 	IfWinExist, Unikum datasystem ab
 	{
 		; Save clipboard content for later use.
@@ -87,11 +87,11 @@ Return
 }
 
 
-; CTRL+(§)
+; CTRL+(Â§)
 ; CTRL+F7 (compile VK)
 #If WinActive("ahk_exe Kosmos.exe")
 {
-	^§::
+	^Â§::
 		send, {ctrl down}{F7 down}
 		sleep 5
 		send, {ctrl up}{F7 up}
@@ -100,9 +100,9 @@ Return
 
 
 /*
-; UA, Visa ärende
+; UA, Visa Ã¤rende
 ; OBS! Under utveckling.
-+§::
++Â§::
 	IfWinExist, Unikum datasystem ab
 	{
 		OldClipBoardContent := ClipboardAll
